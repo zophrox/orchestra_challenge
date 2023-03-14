@@ -1,0 +1,17 @@
+.example-spacer {
+  flex: 1 1 auto;
+}
+.transparent {
+  background-color: transparent;
+}
+a {
+  margin-left: 10px;
+  margin-right: 10px;
+  color: rgba(126, 116, 48, 255);
+  text-decoration: none;
+  &.active {
+    background-color: white;
+    border-radius: 7%;
+    padding: 10px;
+  }
+}
