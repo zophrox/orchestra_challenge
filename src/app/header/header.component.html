@@ -1,7 +1,5 @@
 <mat-toolbar class="transparent">
-  <!-- <span>
-    <img src="/assets/orchestra_logo.png" alt="" style="width: 70px; height: 40px;">
-  </span> -->
+
   <div>
     <a
     href="#"
@@ -11,39 +9,56 @@
       routerLinkActive="active"
       >Головна</a
     >
-    <a style="cursor: pointer" routerLink="/asd" routerLinkActive="#home"
-      >Про проект</a
+
+
+  <!-- material library -->
+    
+      <button class="menu-bar-item" cdkMenuItem [cdkMenuTriggerFor]="file">Про проект</button>
+     
+      <ng-template #file>
+        <div class="menu" cdkMenu>
+          <button class="menu-item" cdkMenuItem>Команда</button>
+          
+          <button class="menu-item" cdkMenuItem >
+            New <span>&#10148;</span>
+          </button>
+          <a href="#competition" class="menu-item" cdkMenuItem  >Положення</a>
+          <button class="menu-item" cdkMenuItem>Архів</button>
+          
+          <button class="menu-item" cdkMenuItem >
+            Розклад майстеркласів<span>&#10148;</span>
+          </button>
+          <a href="#contact" class="menu-item" cdkMenuItem >
+            Контакти
+          </a>
+        </div>
+      </ng-template>
+
+
+
+
+    <a style="cursor: pointer"  href="#apply" 
+      >Подати заявку на участь</a
     >
-    <a 
-    href="mailto:oleh_kun@icloud.com"
-    style="cursor: pointer"  
-      >Контакти</a
-    >
-    <a style="cursor: pointer"  routerLinkActive="active"
-      >Як стати учасником</a
-    >
-    <a
-    href="#competition"
-      style="cursor: pointer"
-      
-      routerLinkActive="active"
-      
-      >Положення конкурсу</a
-    >
+
   </div>
 
-  <span class="example-spacer"></span>
+  <span class="spacer"></span>
   <a style="cursor: pointer">Увійти/Зареєструватися</a>
-  <button
+  
+  <!--Gamburger-->
+  <!-- <button
     mat-icon-button
-    class="example-icon"
+    class="icon"
     aria-label="Example icon-button with menu icon"
   >
     <mat-icon>menu</mat-icon>
-  </button>
+  </button> -->
+
+
   <button
     mat-icon-button
-    class="example-icon"
+    class="icon"
     aria-label="Example icon-button with share icon"
   >
     <mat-icon>share</mat-icon>

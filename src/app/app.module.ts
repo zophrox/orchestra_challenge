@@ -12,6 +12,10 @@ import { MatButtonModule } from '@angular/material/button';
 import { HomeComponent } from './content/home/home.component';
 import { AppRoutingModule } from './content/app-routing.module';
 import { AboutProjectComponent } from './content/about-project/about-project.component';
+import {CdkMenuModule} from '@angular/cdk/menu';
+import { ApplyComponent } from './content/apply/apply.component';
+import { ContactComponent } from './content/contact/contact.component';
+
 
 @NgModule({
   declarations: [
@@ -20,6 +24,10 @@ import { AboutProjectComponent } from './content/about-project/about-project.com
     CompetitionRequlationsComponent,
     HomeComponent,
     AboutProjectComponent,
+    ApplyComponent,
+    ContactComponent,
+    
+    
   ],
   imports: [
     BrowserModule,
@@ -28,6 +36,9 @@ import { AboutProjectComponent } from './content/about-project/about-project.com
     MatToolbarModule,
     MatIconModule,
     MatButtonModule,
+    CdkMenuModule,
+   
+    
     
     
   ],
