@@ -10,13 +10,11 @@ a {
   color: rgba(126, 116, 48, 255);
   text-decoration: none;
   &.active {
-
     border-radius: 7%;
     padding: 10px;
   }
   &:hover {
     color: rgb(220, 220, 220);
-
   }
 }
 

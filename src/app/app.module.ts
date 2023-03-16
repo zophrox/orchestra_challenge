@@ -1,7 +1,6 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
-
 import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatToolbarModule } from '@angular/material/toolbar';
@@ -12,10 +11,9 @@ import { MatButtonModule } from '@angular/material/button';
 import { HomeComponent } from './content/home/home.component';
 import { AppRoutingModule } from './content/app-routing.module';
 import { AboutProjectComponent } from './content/about-project/about-project.component';
-import {CdkMenuModule} from '@angular/cdk/menu';
+import { CdkMenuModule } from '@angular/cdk/menu';
 import { ApplyComponent } from './content/apply/apply.component';
 import { ContactComponent } from './content/contact/contact.component';
-
 
 @NgModule({
   declarations: [
@@ -26,8 +24,6 @@ import { ContactComponent } from './content/contact/contact.component';
     AboutProjectComponent,
     ApplyComponent,
     ContactComponent,
-    
-    
   ],
   imports: [
     BrowserModule,
@@ -37,10 +33,6 @@ import { ContactComponent } from './content/contact/contact.component';
     MatIconModule,
     MatButtonModule,
     CdkMenuModule,
-   
-    
-    
-    
   ],
   providers: [],
   bootstrap: [AppComponent],

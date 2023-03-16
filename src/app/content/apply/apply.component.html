@@ -1,7 +1,4 @@
-
-<app-header></app-header>
 <div class="apply_body">
-    
   <h1>Як прийняти участь у конкурсі?</h1>
   <p>
     Щоб прийняти участь у конкурсі "Orchestra challenge", потрібно
@@ -9,13 +6,8 @@
   </p>
 
   <div class="btn-apply">
-    <button
-      mat-fab
-      extended
-      color="warn"
-     
-    >
-     <a href="https://docs.google.com/forms/d/e/1FAIpQLSc7pzJD7AczFRUl5fW6val5Wbani8V5EYhpLJbLTJils88YSg/alreadyresponded"> Зареєструватись</a>
+    <button mat-fab extended color="primary" (click)="onApply()">
+      Зареєструватись
     </button>
   </div>
 </div>

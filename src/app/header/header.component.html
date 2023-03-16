@@ -1,51 +1,34 @@
 <mat-toolbar class="transparent">
-
   <div>
-    <a
-    href="#"
-      text-decoration:none
-      style="cursor: pointer; text-decoration: none"
-      
-      routerLinkActive="active"
-      >Головна</a
-    >
+    <a href="#" routerLinkActive="active">Головна</a>
 
+    <!-- material library -->
 
-  <!-- material library -->
-    
-      <button class="menu-bar-item" cdkMenuItem [cdkMenuTriggerFor]="file">Про проект</button>
-     
-      <ng-template #file>
-        <div class="menu" cdkMenu>
-          <button class="menu-item" cdkMenuItem>Команда</button>
-          
-          <button class="menu-item" cdkMenuItem >
-            New <span>&#10148;</span>
-          </button>
-          <a href="#competition" class="menu-item" cdkMenuItem  >Положення</a>
-          <button class="menu-item" cdkMenuItem>Архів</button>
-          
-          <button class="menu-item" cdkMenuItem >
-            Розклад майстеркласів<span>&#10148;</span>
-          </button>
-          <a href="#contact" class="menu-item" cdkMenuItem >
-            Контакти
-          </a>
-        </div>
-      </ng-template>
+    <button class="menu-bar-item" cdkMenuItem [cdkMenuTriggerFor]="file">
+      Про проект
+    </button>
 
+    <ng-template #file>
+      <div class="menu" cdkMenu>
+        <button class="menu-item" cdkMenuItem>Команда</button>
 
+        <button class="menu-item" cdkMenuItem>New <span>&#10148;</span></button>
+        <a href="#competition" class="menu-item" cdkMenuItem>Положення</a>
+        <button class="menu-item" cdkMenuItem>Архів</button>
 
+        <button class="menu-item" cdkMenuItem>
+          Розклад майстеркласів<span>&#10148;</span>
+        </button>
+        <a href="#contact" class="menu-item" cdkMenuItem> Контакти </a>
+      </div>
+    </ng-template>
 
-    <a style="cursor: pointer"  href="#apply" 
-      >Подати заявку на участь</a
-    >
-
+    <a style="cursor: pointer" href="#apply">Подати заявку на участь</a>
   </div>
 
   <span class="spacer"></span>
   <a style="cursor: pointer">Увійти/Зареєструватися</a>
-  
+
   <!--Gamburger-->
   <!-- <button
     mat-icon-button
@@ -54,7 +37,6 @@
   >
     <mat-icon>menu</mat-icon>
   </button> -->
-
 
   <button
     mat-icon-button
