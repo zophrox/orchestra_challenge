@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { CompetationsInform } from 'src/app/shared/competations_inform.model';
+import { CompetitionsInform } from 'src/app/shared/competitions-inform.model';
 import { ArchiveService } from './archive.service';
 
 @Component({
@@ -9,7 +9,7 @@ import { ArchiveService } from './archive.service';
 })
 export class ArchiveComponent implements OnInit {
   apiLoaded = true;
-  listArchiveCompetition: CompetationsInform[] = [];
+  listArchiveCompetition: CompetitionsInform[] = [];
   constructor(private archiveService: ArchiveService) {}
   ngOnInit() {
     this.listArchiveCompetition = this.archiveService.getCompetitionsInform();
@@ -19,5 +19,8 @@ export class ArchiveComponent implements OnInit {
       document.body.appendChild(tag);
       this.apiLoaded = true;
     }
+  }
+  competitionIndex(index:number){
+    console.log(index)
   }
 }
