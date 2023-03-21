@@ -17,22 +17,20 @@ export class ArchiveService {
         4
       ),
       new LaureatInfo(
-        'Вася',
-        'середня',
+        'Петя',
+        'Старша',
         'orchestra_logo.png',
-        'Вася був парубок моторний',
+        'Петя був парубок моторний',
         4
       ),
     ]),
-    new CompetitionsInform('Якийсь там конкурс', 'RfQm0j6gzHQ'),
-    new CompetitionsInform('Якийсь там конкурс', 'RfQm0j6gzHQ'),
   ];
 
   getCompetitionsInform() {
     return this.competitions.slice();
   }
 
-  getCompetitionInform(index: number) {
-    return this.competitions[index];
+  getLaureatsInform(index: number) {
+    return this.competitions[index].laureatInfo.slice();
   }
 }

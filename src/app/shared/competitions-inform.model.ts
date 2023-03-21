@@ -4,6 +4,6 @@ export class CompetitionsInform {
   constructor(
     public titleName: string,
     public video: string,
-    public laureatInfo?: LaureatInfo[]
+    public laureatInfo: LaureatInfo[]
   ) {}
 }

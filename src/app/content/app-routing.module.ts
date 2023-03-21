@@ -8,7 +8,7 @@ import { HomeComponent } from './home/home.component';
 const appRoutes: Routes = [
   { path: '', component: HomeComponent },
   // { path: 'competition', component: CompetitionRequlationsComponent },
-  { path: 'about_competition', component: AboutCompetitionComponent },
+  { path: 'about_competition/:id', component: AboutCompetitionComponent },
 ];
 @NgModule({
   imports: [ RouterModule.forRoot(appRoutes)],

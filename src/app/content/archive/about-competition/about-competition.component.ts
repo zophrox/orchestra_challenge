@@ -1,5 +1,8 @@
 import { Component, OnInit } from '@angular/core';
+import { ActivatedRoute, Params } from '@angular/router';
+
 import { CompetitionsInform } from 'src/app/shared/competitions-inform.model';
+import { LaureatInfo } from 'src/app/shared/laureatInfo.model';
 
 import { ArchiveService } from '../archive.service';
 
@@ -9,11 +12,16 @@ import { ArchiveService } from '../archive.service';
   styleUrls: ['./about-competition.component.scss'],
 })
 export class AboutCompetitionComponent implements OnInit {
-  laureatInfo!:CompetitionsInform;
-  id:number = 0;
-  constructor(private archiveService: ArchiveService) {}
+  laureatsInfo!: LaureatInfo[];
+
+  constructor(
+    private archiveService: ArchiveService,
+    private route: ActivatedRoute
+  ) {}
 
   ngOnInit() {
-    // this.laureatInfo = this.archiveService.getCompetitionInform(1);
+    this.route.params.subscribe((params: Params) => {
+      this.laureatsInfo = this.archiveService.getLaureatsInform(params['id']);
+    });
   }
 }
