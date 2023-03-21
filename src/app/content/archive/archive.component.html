@@ -2,7 +2,7 @@
 <h1>Роботи попередніх конкурсів "Orchestra Challenge"</h1>
 
 <div class="video">
-  <mat-card class="card" *ngFor="let item of listArchiveCompetition">
+  <mat-card class="card" *ngFor="let item of listArchiveCompetition, let i = index">
     <mat-card-header>
       <!-- <div mat-card-avatar class="header-image"></div> -->
       <mat-card-title>{{ item.titleName }}</mat-card-title>
@@ -12,7 +12,16 @@
     </youtube-player>
 
     <mat-card-content>
-      <p style="text-align: center; padding-top: 10px">Детальніше</p>
+      <button
+        mat-fab
+        extended
+        color="warn"
+        routerLink="about_competition"
+        style="text-align: center; padding-top: 10px"
+        (click)="competitionIndex(i)"
+      >
+        Детальніше
+      </button>
     </mat-card-content>
   </mat-card>
 </div>
