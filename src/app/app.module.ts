@@ -14,6 +14,11 @@ import { AboutProjectComponent } from './content/about-project/about-project.com
 import { CdkMenuModule } from '@angular/cdk/menu';
 import { ApplyComponent } from './content/apply/apply.component';
 import { ContactComponent } from './content/contact/contact.component';
+import { ArchiveComponent } from './content/archive/archive.component';
+import {MatCardModule} from '@angular/material/card';
+import { AboutCompetitionComponent } from './content/archive/about-competition/about-competition.component';
+import { YouTubePlayerModule } from '@angular/youtube-player';
+import { CardLaureatComponent } from './content/archive/about-competition/card-laureat/card-laureat.component';
 
 @NgModule({
   declarations: [
@@ -24,6 +29,9 @@ import { ContactComponent } from './content/contact/contact.component';
     AboutProjectComponent,
     ApplyComponent,
     ContactComponent,
+    ArchiveComponent,
+    AboutCompetitionComponent,
+    CardLaureatComponent,
   ],
   imports: [
     BrowserModule,
@@ -33,6 +41,9 @@ import { ContactComponent } from './content/contact/contact.component';
     MatIconModule,
     MatButtonModule,
     CdkMenuModule,
+    MatCardModule,
+    YouTubePlayerModule
+    
   ],
   providers: [],
   bootstrap: [AppComponent],

@@ -1,0 +1,27 @@
+<app-header></app-header>
+
+<div class="age-categories">
+  <h1>Молодша вікова категорія</h1>
+  <div *ngFor="let laureatInfo of laureatsInfo">
+    <app-card-laureat
+      *ngIf="laureatInfo.ageCategories === 'Молодша'"
+      [laureatInfo]="laureatInfo"
+    ></app-card-laureat>
+  </div>
+
+  <h1>Середня вікова категорія</h1>
+  <div *ngFor="let laureatInfo of laureatsInfo">
+    <app-card-laureat
+      *ngIf="laureatInfo.ageCategories === 'Середня'"
+      [laureatInfo]="laureatInfo"
+    ></app-card-laureat>
+  </div>
+
+  <h1>Старша вікова категорія</h1>
+  <div *ngFor="let laureatInfo of laureatsInfo">
+    <app-card-laureat
+      *ngIf="laureatInfo.ageCategories === 'Старша'"
+      [laureatInfo]="laureatInfo"
+    ></app-card-laureat>
+  </div>
+</div>
