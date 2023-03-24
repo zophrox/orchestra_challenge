@@ -4,6 +4,7 @@ export class LaureatInfo {
     public ageCategories: string,
     public image: string,
     public description: string,
-    public degreeAward: number
+    public instrument: string,
+    public place: string
   ) {}
 }

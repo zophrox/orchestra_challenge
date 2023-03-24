@@ -1,15 +1,35 @@
+<!-- <mat-card class="card" color="warn">
+  <mat-card-header>
+    <mat-card-title-group>
+      <mat-card-title>{{ laureatInfo.name }}</mat-card-title>
 
-    <mat-card  class="card">
-      <mat-card-header>
-        <mat-card-title-group>
-          <mat-card-title>{{ laureatInfo.name }}</mat-card-title>
+      <img
+        mat-card-lg-image
+        src="https://material.angular.io/assets/img/examples/shiba2.jpg"
+      />
+    </mat-card-title-group>
+  </mat-card-header>
+  <mat-card-content> Коротка біографія </mat-card-content>
+</mat-card> -->
+<div class="card-wrapper">
+	<div class="card-custom">
+		<div class="card-imgage">
+			<img class="card-img rounded-circle" src="https://material.angular.io/assets/img/examples/shiba2.jpg" alt="Card image cap">
+	</div>
+			<div class="card-description">
+				<h3 class="card-title text-success">{{laureatInfo.name}}</h3>
+				<h5 class="card-title text-secondary">Stop guessing, known for accuracy.</h5>
+				<p class="card-text">This is a wider card with supporting text below as a natural lead-in to
+					additional
+					content. This content is a little bit longer.
+			
+				</p>
+			</div>
+		</div>
+		<div class="card-custom">
+			<div class="rating">5</div>
+			<div class="member-from"></div>
+			<div class="rating-points">67,254</div>
+		</div>
+	</div>
 
-          <img
-            mat-card-lg-image
-            src="https://material.angular.io/assets/img/examples/shiba2.jpg"
-          />
-        </mat-card-title-group>
-      </mat-card-header>
-      <mat-card-content> Коротка біографія </mat-card-content>
-    </mat-card>
-  
