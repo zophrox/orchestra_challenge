@@ -1,7 +1,7 @@
 .spacer {
   flex: 1 1 auto;
 }
-.transparent {
+.mat-tolbar {
   background-color: transparent;
 }
 a {
@@ -14,7 +14,7 @@ a {
     padding: 10px;
   }
   &:hover {
-    color: rgb(220, 220, 220);
+    color: rgba(170, 130, 40, 300);
   }
 }
 
@@ -30,8 +30,9 @@ a {
   font-weight: 500;
 
   &:hover {
-    color: rgb(220, 220, 220);
+    color: rgba(170, 130, 40, 300);
   }
+
 }
 
 .menu {
@@ -98,5 +99,5 @@ a {
 
 .menu-bar-item[aria-expanded="true"],
 .menu-item[aria-expanded="true"] {
-  color: rgb(220, 220, 220) !important;
+  color: rgba(170, 130, 40, 300) !important;
 }
