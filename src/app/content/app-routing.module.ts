@@ -10,7 +10,7 @@ const appRoutes: Routes = [
     path: 'competition-requlations',
     component: CompetitionRequlationsComponent,
   },
-  { path: 'about_competition/:id', component: AboutCompetitionComponent },
+  { path: 'about-competition/:id', component: AboutCompetitionComponent },
 ];
 @NgModule({
   imports: [RouterModule.forRoot(appRoutes)],
