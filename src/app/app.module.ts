@@ -6,7 +6,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatToolbarModule } from '@angular/material/toolbar';
 import { HeaderComponent } from './header/header.component';
 import { MatIconModule } from '@angular/material/icon';
-import { CompetitionRequlationsComponent } from './content/competition-requlations/competition-requlations.component';
+import { CompetitionRegulationsComponent } from './content/competition-regulations/competition-regulations.component';
 import { MatButtonModule } from '@angular/material/button';
 import { HomeComponent } from './content/home/home.component';
 import { AppRoutingModule } from './content/app-routing.module';
@@ -24,7 +24,7 @@ import { CardLaureatComponent } from './content/archive/about-competition/card-l
   declarations: [
     AppComponent,
     HeaderComponent,
-    CompetitionRequlationsComponent,
+    CompetitionRegulationsComponent,
     HomeComponent,
     AboutProjectComponent,
     ApplyCompetitionFormComponent,
