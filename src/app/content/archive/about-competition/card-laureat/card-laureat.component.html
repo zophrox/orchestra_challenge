@@ -14,14 +14,13 @@
 <div class="card-wrapper">
 	<div class="card-custom">
 		<div class="card-imgage">
-			<img class="card-img rounded-circle" src="https://material.angular.io/assets/img/examples/shiba2.jpg" alt="Card image cap">
+			<img class="card-img rounded-circle" src="assets/{{laureatInfo.image}}" alt="Card image cap">
 	</div>
 			<div class="card-description">
-				<h3 class="card-title text-success">{{laureatInfo.name}}</h3>
-				<h5 class="card-title text-secondary">Stop guessing, known for accuracy.</h5>
-				<p class="card-text">This is a wider card with supporting text below as a natural lead-in to
-					additional
-					content. This content is a little bit longer.
+				<h1 class="card-title text-success">{{laureatInfo.name}} - {{laureatInfo.place}}</h1>
+				<h3 class="card-title text-success">{{laureatInfo.instrument}}</h3>
+				
+				<p class="card-text">{{laureatInfo.description}}
 			
 				</p>
 			</div>
