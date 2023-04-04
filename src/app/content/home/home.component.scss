@@ -1,7 +1,17 @@
-.image {
-    background-image: url("/assets/orchestra_challenge.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: 100%;
-    width: 100%;
-  }
+.body {
+  background-image: url("/assets/orchestra_challenge.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100%;
+  width: 100%;
+}
+.header {
+  position: fixed;
+  width: 100%;
+}
+.scroll-style {
+  background-color: rgba(0, 0, 0, 0.12);;
+}
+.transparent-header{
+  background-color:transparent
+}
