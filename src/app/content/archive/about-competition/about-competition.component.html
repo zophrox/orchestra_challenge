@@ -2,10 +2,10 @@
 
 <div class="age-categories">
   <h1>Молодша вікова категорія</h1>
-  <div *ngFor="let laureatInfo of laureatsInfo">
+  <div *ngFor="let laureat of laureatsInfo">
     <app-card-laureat
-      *ngIf="laureatInfo.ageCategories === 'Молодша'"
-      [laureatInfo]="laureatInfo"
+      *ngIf="laureat.ageCategories === 'Молодша'"
+      [laureatInfo]="laureat"
     ></app-card-laureat>
   </div>
 
