@@ -1,0 +1,41 @@
+* {
+    box-sizing: border-box;
+  }
+  html,body{
+    margin:0;
+    padding: 0;
+  }
+  .card-title{
+   font-size: 40px; 
+  }
+  .instrument{
+    font-size: 20px;
+  }
+  .card-img{
+    max-width: 100%;
+  }
+  .card-wrapper{
+    border: 2px solid gray; 
+    padding: .75rem;
+  }
+  
+  .card-custom{
+  display: flex;
+  flex-direction: row;
+  justify-content:space-around;
+  max-width: 100%;
+  border: 2px solid gray; 
+  
+  }
+  
+  .card-description{
+    width: 60%;
+    padding: 20px;
+    font-size: 30px;
+  
+  }
+
+  .card-imgage{
+    width: 40%;
+    
+  }

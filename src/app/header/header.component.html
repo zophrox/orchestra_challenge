@@ -10,16 +10,20 @@
 
     <ng-template #file>
       <div class="menu" cdkMenu>
-        <button class="menu-item" cdkMenuItem>Команда</button>
+       
 
         <button class="menu-item" cdkMenuItem>New <span>&#10148;</span></button>
-        <a href="#competition" class="menu-item" cdkMenuItem>Положення</a>
-        <a href="#archive" class="menu-item" >Архів</a>
+        <!-- <a href="#competition" class="menu-item" cdkMenuItem>Положення</a> -->
+        <a routerLink="/competition-requlations" class="menu-item" cdkMenuItem
+          >Положення</a
+        >
+        <a href="#archive" class="menu-item">Архів</a>
 
         <button class="menu-item" cdkMenuItem>
           Розклад майстеркласів<span>&#10148;</span>
         </button>
         <a href="#contact" class="menu-item" cdkMenuItem> Контакти </a>
+        <button class="menu-item" cdkMenuItem>Команда</button>
       </div>
     </ng-template>
 

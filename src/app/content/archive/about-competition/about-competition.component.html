@@ -1,13 +1,27 @@
 <app-header></app-header>
-<mat-card class="card" *ngFor="let laureatInfo of laureatsInfo">
-    <mat-card-header>
-      <mat-card-title-group>
-        <mat-card-title>{{laureatInfo.name}}</mat-card-title>
-        <mat-card-subtitle>Вікова категорія</mat-card-subtitle>
-        <img mat-card-lg-image src="https://material.angular.io/assets/img/examples/shiba2.jpg" >
-      </mat-card-title-group>
-    </mat-card-header>
-    <mat-card-content>
-      Коротка біографія
-    </mat-card-content>
-  </mat-card>
+
+<div class="age-categories">
+  <h1>Молодша вікова категорія</h1>
+  <div *ngFor="let laureat of laureatsInfo">
+    <app-card-laureat
+      *ngIf="laureat.ageCategories === 'Молодша'"
+      [laureatInfo]="laureat"
+    ></app-card-laureat>
+  </div>
+
+  <h1>Середня вікова категорія</h1>
+  <div *ngFor="let laureatInfo of laureatsInfo">
+    <app-card-laureat
+      *ngIf="laureatInfo.ageCategories === 'Середня'"
+      [laureatInfo]="laureatInfo"
+    ></app-card-laureat>
+  </div>
+
+  <h1>Старша вікова категорія</h1>
+  <div *ngFor="let laureatInfo of laureatsInfo">
+    <app-card-laureat
+      *ngIf="laureatInfo.ageCategories === 'Старша'"
+      [laureatInfo]="laureatInfo"
+    ></app-card-laureat>
+  </div>
+</div>
