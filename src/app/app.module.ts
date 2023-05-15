@@ -19,6 +19,7 @@ import { MatCardModule } from '@angular/material/card';
 import { AboutCompetitionComponent } from './content/archive/about-competition/about-competition.component';
 import { YouTubePlayerModule } from '@angular/youtube-player';
 import { CardLaureatComponent } from './content/archive/about-competition/card-laureat/card-laureat.component';
+import { TeamComponent } from './content/team/team.component';
 
 @NgModule({
   declarations: [
@@ -32,6 +33,7 @@ import { CardLaureatComponent } from './content/archive/about-competition/card-l
     ArchiveComponent,
     AboutCompetitionComponent,
     CardLaureatComponent,
+    TeamComponent,
   ],
   imports: [
     BrowserModule,
