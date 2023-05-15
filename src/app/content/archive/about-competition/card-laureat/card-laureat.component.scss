@@ -5,7 +5,13 @@
     margin:0;
     padding: 0;
   }
-  img{
+  .card-title{
+   font-size: 40px; 
+  }
+  .instrument{
+    font-size: 20px;
+  }
+  .card-img{
     max-width: 100%;
   }
   .card-wrapper{
@@ -17,15 +23,19 @@
   display: flex;
   flex-direction: row;
   justify-content:space-around;
-  max-width: 800px;
-  /* border: 2px solid gray; */
+  max-width: 100%;
+  border: 2px solid gray; 
   
   }
   
   .card-description{
-    width: 68%;
+    width: 60%;
+    padding: 20px;
+    font-size: 30px;
+  
   }
+
   .card-imgage{
-    width: 28%;
-     max-width: 150px;  
+    width: 40%;
+    
   }
