@@ -1,1 +1,19 @@
-<p>team works!</p>
+<div class='body'>
+    <h1>Команда</h1>
+    <div class="card" *ngFor="let coachInform of infoTeam">
+        <div class="image">
+            <img src={{coachInform.image}} alt="Oleh Kuntyy" >
+        </div>
+        <div class="content">
+            <div class="name">
+                    <p>{{coachInform.name}}</p>
+            </div>
+            <div class="describe">
+                {{coachInform.description}}
+            </div>
+        </div>
+        
+    </div>
+</div>
+
+
