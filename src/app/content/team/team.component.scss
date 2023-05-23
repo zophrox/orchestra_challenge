@@ -6,21 +6,39 @@ h1{
     color:rgba(0, 0, 0);
 }
 img{
-    height: 800px;
-    width: 600px;
+    height: 600px;
+    width: 400px;
 }
 .card{
     display:flex;
-    justify-content: space-between;
+    justify-content: space-around;
+    flex-direction: row-reverse;
 }
-.name{
-    font-weight: 300;
-    font-size: large;
-    text-align: center;
-
+.card-reverse{
+    display:flex;
+    justify-content: space-around;
 }
 .content{
     display: flex;
     flex-direction: column;
-    justify-content:center
+    justify-content:center;
+    max-width: 35%;
+    
+    
+}
+.name{
+    font-weight: 400;
+    font-size: 55px;
+    text-align: center;
+    padding-bottom:20px ;
+
+}
+
+.describe{
+    font-weight: 200;
+    font-size: 30px;
+    text-align: center;
+    padding-bottom:20px ;
+    line-height: 1.5;
+
 }

@@ -10,9 +10,9 @@ import { TeamInform } from 'src/app/shared/team-inform.model';
 })
 export class InfoTeamService {
   aboutCoach:TeamInform[]=[
+   new TeamInform('Кунтий Олег','Диригент НАОНІ    asdfasdfasdfasdfasdf asdfasdf asdfasdfas ;lkj;lkj;lk ;lkj;lk j;lkj;lkj;lkj ;l kj;lk kj kjk ;lkjk l;lkj ','assets/team/Oleh_Kuntyy.JPG'),
    new TeamInform('Кунтий Олег','Диригент НАОНІ','assets/team/Oleh_Kuntyy.JPG'),
-   new TeamInform('Кунтий Олег','Диригент НАОНІ','team/Oleh_Kuntyy.JPG'),
-   new TeamInform('Кунтий Олег','Диригент НАОНІ','team/Oleh_Kuntyy.JPG'),
+   new TeamInform('Кунтий Олег','Диригент НАОНІ','assets/team/Oleh_Kuntyy.JPG'),
     
   ]
   getInform(){
