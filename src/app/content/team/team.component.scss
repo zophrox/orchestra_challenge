@@ -1,62 +1,85 @@
-// .body {
- 
-// }
-h1 {
-  font-weight: 650;
-  color: rgba(0, 0, 0);
-}
-img {
-  height: 600px;
-  width: 100%;
-}
-.card {
-  display: flex;
-  justify-content: space-around;
-  flex-direction: row-reverse;
-  padding-bottom: 40px;
-}
-.card-reverse {
-  display: flex;
-  justify-content: space-around;
-  width: 100%;
-  
-}
-.content {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  max-width: 35%;
-  
-}
-.name {
-  font-weight: 400;
-  font-size: 55px;
-  text-align: center;
-  padding-bottom: 20px;
-  
+.team-container {
+  padding-top: 5%;
+  max-width: 100%;
+  h1 {
+    padding-left: 20%;
+    padding-bottom: 40px;
+    font-weight: 650;
+    color: rgba(0, 0, 0);
+  }
+  .team-card {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row-reverse;
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+  .team-card-reverse {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background-color: rgb(218, 216, 216);
+  }
+  img {
+    height: 600px;
+    width: 100%;
+    flex: 1;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    transition: box-shadow 0.3s ease-in-out;
+  }
+
+  img:hover {
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+    transition: box-shadow 0.5s ease-in-out;
+  }
+
+  .content,
+  .content-reverse {
+    display: flex;
+    flex: 4;
+    flex-direction: column;
+    justify-content: center;
+    padding: 20px 40px;
+  }
+
+  .name {
+    font-weight: 500;
+    font-size: 50px;
+    text-align: center;
+    padding-bottom: 20px;
+  }
+
+  .describe {
+    font-weight: 300;
+    font-size: 30px;
+    text-align: center;
+    padding-bottom: 20px;
+    line-height: 1.5;
+    transition-delay: 1s;
+    animation: animate 2s linear;
+  }
 }
 
-.describe {
-  font-weight: 200;
-  font-size: 30px;
-  text-align: center;
-  padding-bottom: 20px;
-  line-height: 1.5;
-  transition-delay: 1s;
-  animation: animate 2s linear;
-}
 @keyframes animate {
   0% {
+    opacity: 0;
     width: 100%;
     height: 0px;
   }
   30% {
     width: 100%;
-    height: 0px;
+    height: 100px;
   }
   60% {
     width: 100%;
-    // height: 175px;
-    height: 29.7%;
+    height: 50px;
+    height: 37%;
   }
+  // 100% {
+  //   opacity: 1;
+  // }
 }

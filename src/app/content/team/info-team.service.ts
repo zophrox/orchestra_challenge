@@ -9,23 +9,69 @@ import { TeamInform } from 'src/app/shared/team-inform.model';
   providedIn: 'root',
 })
 export class InfoTeamService {
-  aboutCoach:TeamInform[]=[
-   new TeamInform('Кунтий Олег','Диригент НАОНІ    asdfasdfasdfasdfasdf asdfasdf asdfasdfas ;lkj;lkj;lk ;lkj;lk j;lkj;lkj;lkj ;l kj;lk kj kjk ;lkjk l;lkj ','assets/team/Kuntyy.jpg'),
-   new TeamInform('Олесь Журавчак','Диригент НАОНІ','assets/team/juravchak.jpg'),
-   new TeamInform('Олександр Жищенко','Диригент НАОНІ','assets/team/gyschenco.jpg'),
-   new TeamInform('Тарас Столяр','Диригент НАОНІ','assets/team/stolar.jpg'),
-   new TeamInform('Ігор Брухаль','Диригент НАОНІ','assets/team/bruchal.jpg'),   
-   new TeamInform('Любомир Матейко','Диригент НАОНІ','assets/team/mateyko.jpg'),
-   new TeamInform('Назар Павленко','Диригент НАОНІ','assets/team/pavlenko.jpg'),
-   new TeamInform('Олег Микитюк','Диригент НАОНІ','assets/team/mykytuk.jpg'),
-   new TeamInform('Денис Савельєв','Диригент НАОНІ','assets/team/savelev.jpg'),
-   new TeamInform('Нікіта Рубченко','Диригент НАОНІ','assets/team/rubchenko.jpg'),
-   new TeamInform('Петро Січко','Диригент НАОНІ','assets/team/sichko.jpg'),
-   new TeamInform('Андій Бобрик','Диригент НАОНІ','assets/team/bobryk.jpg'),
-
-    
-  ]
-  getInform(){
-    return this.aboutCoach.slice()
+  aboutCoach: TeamInform[] = [
+    new TeamInform(
+      'Кунтий Олег',
+      'дириґент одного з найвідоміших колективів України НАОНІ оркестра, переможець шоу «Битва оркестрів».Співпрацював з ONUKA, «ТІК», «Друга ріка», співаками Христиною Соловій, Олегом Скрипкою, Артемом Півоваровим. ',
+      'assets/team/Kuntyy.jpg'
+    ),
+    new TeamInform(
+      'Олесь Журавчак',
+      'музикант-віртуоз, культуролог, арт-менеджер, продюсер, Заступник Міністра культури України (2014), директор-розпорядник Національного академічного оркестру народних інструментів України.',
+      'assets/team/juravchak.jpg'
+    ),
+    new TeamInform(
+      'Олександр Жищенко',
+      'звукорежисер, аранжувальник, композитор, засновник, першого в Україні лейблу з випуску авторських дисків в стилі електронної музики Innertion records. Співпрацював з O.Torvald, VRODA, Колбасний цех, Хонгильдон, Gorchitza, Без Обмежень, Марія Бурмака, Kozak System, Allois, НАОНІ, театр КРОТ, Зернятко, Горлиця. У 2000 створив гурт Tomato Jaws з якого народився проект ONUKA.',
+      'assets/team/gyschenco.jpg'
+    ),
+    new TeamInform(
+      'Тарас Столяр',
+      'переможець Першого Міжнародного конкурсу виконавців на українських народних інструментах ім. Гната Хоткевича, артист Національного академічного оркестру народних інструментів України, Заслужений артист України.',
+      'assets/team/stolar.jpg'
+    ),
+    new TeamInform(
+      'Ігор Брухаль',
+      'музикант-віртуоз, викладач, лауреат Міжнародних та Всеукраїнських конкурсів, Заслужений артист України.',
+      'assets/team/bruchal.jpg'
+    ),
+    new TeamInform(
+      'Любомир Матейко',
+      'народний артист України, головний диригент, художній керівник, соліст-скрипаль та аранжувальник, співзасновник Київського ансамблю української музики «Дніпро».',
+      'assets/team/mateyko.jpg'
+    ),
+    new TeamInform(
+      'Назар Павленко',
+      'артист Національного академічного оркестру народних інструментів України, співпрацював з O.Torvald, Wannawakemusic, українським гуртом GONTA.',
+      'assets/team/pavlenko.jpg'
+    ),
+    new TeamInform(
+      'Олег Микитюк',
+      'музикант, аранжувальник, диригент, викладач кафедри баяна та акордеона Національної музичної академії України ім. П. І. Чайковського.',
+      'assets/team/mykytuk.jpg'
+    ),
+    new TeamInform(
+      'Денис Савельєв',
+      'український флейтист, котрий підкорив кращі концертні майданчики світу, серед яких Карнегі Хол, Кеннеді Центр, Лінкольн Центр, Метрополітен Музей, Симфонічний  Зал Шанхаю та Санторі Хол у Токіо. ',
+      'assets/team/savelev.jpg'
+    ),
+    new TeamInform(
+      'Нікіта Рубченко',
+      ' рок-музикант, композитор, аранжувальник. Співпрацював з багатьма відомими виконавцями та колективами.',
+      'assets/team/rubchenko.jpg'
+    ),
+    new TeamInform(
+      'Петро Січко',
+      'заслужений артист України, викладач Львівського музичного фахового коледжу ім. С.Людкевича, артист в оркестрі Національного драматичного театру імені М. Заньковецької.',
+      'assets/team/sichko.jpg'
+    ),
+    new TeamInform(
+      'Андій Бобрик',
+      'музикант, викладач Львівської національної музичної академії імені Миколи Лисенка та Львівського музичного фахового коледжу ім. С.Людкевича.',
+      'assets/team/bobryk.jpg'
+    ),
+  ];
+  getInform() {
+    return this.aboutCoach.slice();
   }
 }

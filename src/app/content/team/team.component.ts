@@ -8,6 +8,7 @@ import { InfoTeamService } from './info-team.service';
   styleUrls: ['./team.component.scss']
 })
 export class TeamComponent implements OnInit{
+  // imageUrl="https://www.gettyimages.ie/gi-resources/images/Homepage/Hero/UK/CMS_Creative_164657191_Kingfisher.jpg"
   infoTeam:TeamInform[]=[]
 constructor(private infoTeamService:InfoTeamService){}
 
