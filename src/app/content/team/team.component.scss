@@ -44,12 +44,7 @@
     flex-direction: column;
     justify-content: center;
     padding: 20px 40px;
-    // opacity: 0;
   }
-  // .active {
-  //     transform: translateY(0);
-  //     opacity: 1;
-  //   }
 
   .name {
     font-weight: 400;
@@ -76,15 +71,6 @@
     opacity: 0;
     transform: translateY(30px);
   }
-  // 30% {
-  //   width: 100%;
-  //   height: 100px;
-  // }
-  // 60% {
-  //   width: 100%;
-  //   height: 50px;
-  //   height: 37%;
-  // }
   100% {
     opacity: 1;
     transform: translateY(0);
