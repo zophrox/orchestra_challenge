@@ -3,10 +3,8 @@
 }
 .mat-toolbar {
   background-color: transparent;
-  
 }
 a {
- 
   margin-right: 20px;
   color: rgba(126, 116, 48, 255);
   text-decoration: none;
@@ -87,17 +85,17 @@ a {
   background-color: rgb(197, 193, 193);
 }
 
-.menu .menu-item[role="menuitemradio"][aria-checked="true"] {
+.menu .menu-item[role='menuitemradio'][aria-checked='true'] {
   background-color: rgb(220, 220, 220);
 }
-.menu .menu-item[role="menuitemcheckbox"][aria-checked="true"] {
+.menu .menu-item[role='menuitemcheckbox'][aria-checked='true'] {
   background-color: rgb(220, 220, 220);
 }
 .menu .menu-item:active {
   color: rgb(220, 220, 220);
 }
 
-.menu-bar-item[aria-expanded="true"],
-.menu-item[aria-expanded="true"] {
+.menu-bar-item[aria-expanded='true'],
+.menu-item[aria-expanded='true'] {
   color: rgba(170, 130, 40, 300) !important;
 }

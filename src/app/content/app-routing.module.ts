@@ -8,12 +8,12 @@ import { TeamComponent } from './team/team.component';
 const appRoutes: Routes = [
   { path: '', component: HomeComponent },
   {
-    path: 'competition-requlations',
+    path: 'competition-regulations',
     component: CompetitionRegulationsComponent,
   },
   {
     path: 'team',
-    component:TeamComponent,
+    component: TeamComponent,
   },
   { path: 'about-competition/:id', component: AboutCompetitionComponent },
 ];

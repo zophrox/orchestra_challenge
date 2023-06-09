@@ -46,7 +46,7 @@ import { TeamComponent } from './content/team/team.component';
     MatCardModule,
     YouTubePlayerModule,
   ],
-  providers: [],
+  providers: [{ provide: 'Window', useValue: window }],
   bootstrap: [AppComponent],
 })
 export class AppModule {}

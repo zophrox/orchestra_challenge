@@ -22,6 +22,6 @@ export class ArchiveComponent implements OnInit {
     }
   }
   competitionIndex(index: number) {
-    this.router.navigate(['/about-competition',index])
+    this.router.navigate(['/about-competition', index]);
   }
 }

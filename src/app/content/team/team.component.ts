@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import { TeamInform } from 'src/app/shared/team-inform.model';
-import { InfoTeamService } from './info-team.service';
+import { TeamInfo } from './team-inform/team-inform.interface';
+import { TeamService } from './team.service';
 
 @Component({
   selector: 'app-team',
@@ -8,11 +8,9 @@ import { InfoTeamService } from './info-team.service';
   styleUrls: ['./team.component.scss'],
 })
 export class TeamComponent implements OnInit {
-  infoTeam: TeamInform[] = [];
-
-  constructor(private infoTeamService: InfoTeamService) {}
-
+  infoTeam: TeamInfo[] = [];
+  constructor(private teamService: TeamService) {}
   ngOnInit() {
-    this.infoTeam = this.infoTeamService.getInform();
+    this.infoTeam = this.teamService.getInform();
   }
 }
