@@ -1,12 +1,5 @@
 import { DOCUMENT } from '@angular/common';
-import {
-  Component,
-  ElementRef,
-  HostListener,
-  Inject,
-  Renderer2,
-  ViewChild,
-} from '@angular/core';
+import { Component, ElementRef, HostListener, Inject, Renderer2, ViewChild } from '@angular/core';
 
 @Component({
   selector: 'app-root',
@@ -25,22 +18,13 @@ export class AppComponent {
   @HostListener('window:scroll', [])
   onWindowScroll() {
     const scrollOffset =
-      this.window.pageYOffset ||
-      this.document.documentElement.scrollTop ||
-      this.document.body.scrollTop ||
-      0;
+      this.window.pageYOffset || this.document.documentElement.scrollTop || this.document.body.scrollTop || 0;
 
     if (scrollOffset >= 20) {
       this.renderer.addClass(this.headerRef.nativeElement, 'scroll-style');
-      this.renderer.removeClass(
-        this.headerRef.nativeElement,
-        'transparent-header'
-      );
+      this.renderer.removeClass(this.headerRef.nativeElement, 'transparent-header');
     } else {
-      this.renderer.addClass(
-        this.headerRef.nativeElement,
-        'transparent-header'
-      );
+      this.renderer.addClass(this.headerRef.nativeElement, 'transparent-header');
     }
   }
 }
