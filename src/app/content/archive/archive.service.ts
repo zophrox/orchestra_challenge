@@ -10,12 +10,12 @@ export class ArchiveService {
   competitions: CompetitionsInform[] = competitionsInfo;
 
   getCompetitionsInform() {
-    return this.competitions.slice();
-    // return JSON.parse(JSON.stringify(competitionsInfo));
+    
+    return JSON.parse(JSON.stringify(competitionsInfo));
   }
 
   getLaureatsInform(index: number) {
-    return this.competitions[index].laureatInfo.slice();
-    // return JSON.parse(JSON.stringify(competitionsInfo[index].laureatInfo));
+   
+    return JSON.parse(JSON.stringify(competitionsInfo[index].laureatInfo));
   }
 }
