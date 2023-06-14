@@ -1,6 +1,8 @@
 import { Component, OnInit } from '@angular/core';
-import { TeamInfo } from './team-inform/team-inform.interface';
 import { TeamService } from './team.service';
+import { TeamInfo } from './team-inform/team-inform.interface';
+// import { TeamInfo } from './team-inform/team-inform.mock';
+
 
 @Component({
   selector: 'app-team',
