@@ -1,41 +1,42 @@
-* {
-    box-sizing: border-box;
-  }
-  html,body{
-    margin:0;
-    padding: 0;
-  }
-  .card-title{
-   font-size: 40px; 
-  }
-  .instrument{
-    font-size: 20px;
-  }
-  .card-img{
-    max-width: 100%;
-  }
-  .card-wrapper{
-    border: 2px solid gray; 
-    padding: .75rem;
-  }
-  
-  .card-custom{
-  display: flex;
-  flex-direction: row;
-  justify-content:space-around;
-  max-width: 100%;
-  border: 2px solid gray; 
-  
-  }
-  
-  .card-description{
-    width: 60%;
-    padding: 20px;
-    font-size: 30px;
-  
-  }
+.laureats-card {
+  border: 2px solid gray;
+  padding: 0.75rem;
 
-  .card-imgage{
-    width: 40%;
-    
+  .laureat-card {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    border: 2px solid gray;
+
+    .laureat-image {
+      img {
+        width: 100%;
+        box-shadow: 0 5px 20px rgba(0, 0, 0, 0.3);
+        transition: box-shadow 0.3s ease-in-out;
+      }
+
+      img:hover {
+        box-shadow: 0 0 35px rgba(0, 0, 0, 1);
+        transition: box-shadow 0.5s ease-in-out;
+      }
+      flex: 2;
+    }
+
+    .laureat-description {
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+      flex: 3;
+      padding-left: 10px;
+
+      .instrument {
+        font-size: 20px;
+      }
+
+      .laureat-info {
+        font-size: 20px;
+        line-height: 1.25;
+      }
+    }
   }
+}

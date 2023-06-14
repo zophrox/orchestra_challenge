@@ -1,10 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute, Params } from '@angular/router';
-
-// import { CompetitionsInform } from 'src/app/shared/competitions-inform.model';
-import { LaureatInfo } from 'src/app/shared/laureatInfo.model';
-
 import { ArchiveService } from '../archive.service';
+import { LaureatInfo } from './competitions-inform/competitions-inform.interface';
 
 @Component({
   selector: 'app-about-competition',
@@ -14,10 +11,7 @@ import { ArchiveService } from '../archive.service';
 export class AboutCompetitionComponent implements OnInit {
   laureatsInfo!: LaureatInfo[];
 
-  constructor(
-    private archiveService: ArchiveService,
-    private route: ActivatedRoute
-  ) {}
+  constructor(private archiveService: ArchiveService, private route: ActivatedRoute) {}
 
   ngOnInit() {
     this.route.params.subscribe((params: Params) => {

@@ -19,7 +19,7 @@ import { MatCardModule } from '@angular/material/card';
 import { AboutCompetitionComponent } from './content/archive/about-competition/about-competition.component';
 import { YouTubePlayerModule } from '@angular/youtube-player';
 import { CardLaureatComponent } from './content/archive/about-competition/card-laureat/card-laureat.component';
-import { TeamComponent } from './content/team/team.component';
+import { MasterCompetitionComponent } from './content/masters-competition/master-competition.component';
 
 @NgModule({
   declarations: [
@@ -33,7 +33,7 @@ import { TeamComponent } from './content/team/team.component';
     ArchiveComponent,
     AboutCompetitionComponent,
     CardLaureatComponent,
-    TeamComponent,
+    MasterCompetitionComponent,
   ],
   imports: [
     BrowserModule,
@@ -46,7 +46,7 @@ import { TeamComponent } from './content/team/team.component';
     MatCardModule,
     YouTubePlayerModule,
   ],
-  providers: [],
+  providers: [{ provide: 'Window', useValue: window }],
   bootstrap: [AppComponent],
 })
 export class AppModule {}

@@ -1,0 +1,78 @@
+.master-competition-container {
+  padding-top: 5%;
+  max-width: 100%;
+  h1 {
+    padding-left: 20%;
+    padding-bottom: 40px;
+    font-weight: 650;
+    color: rgba(0, 0, 0);
+  }
+  .master-competition-card {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row-reverse;
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+  .master-competition-card-reverse {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background-color: rgb(218, 216, 216);
+  }
+  img {
+    height: 600px;
+    width: 100%;
+    flex: 1;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    transition: box-shadow 0.3s ease-in-out;
+  }
+
+  img:hover {
+    box-shadow: 0 0 35px rgba(0, 0, 0, 1);
+    transition: box-shadow 0.5s ease-in-out;
+  }
+
+  .master-competition-content,
+  .master-competition-content-reverse {
+    display: flex;
+    flex: 4;
+    flex-direction: column;
+    justify-content: center;
+    padding: 20px 40px;
+  }
+
+  .master-competition-name {
+    font-weight: 400;
+    font-size: 100px;
+    text-align: center;
+    padding-bottom: 20px;
+    line-height: 1.25;
+    animation: animate 2s linear;
+  }
+
+  .master-competition-describe {
+    font-weight: 200;
+    font-size: 25px;
+    text-align: center;
+    padding-bottom: 20px;
+    line-height: 1.5;
+    transition-delay: 1s;
+    animation: animate 2s linear;
+  }
+}
+
+@keyframes animate {
+  0% {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

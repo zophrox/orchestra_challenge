@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
-import { CompetitionsInform } from 'src/app/shared/competitions-inform.model';
 import { ArchiveService } from './archive.service';
+import { CompetitionsInform } from './about-competition/competitions-inform/competitions-inform.interface';
 
 @Component({
   selector: 'app-archive',
@@ -22,6 +22,6 @@ export class ArchiveComponent implements OnInit {
     }
   }
   competitionIndex(index: number) {
-    this.router.navigate(['/about-competition',index])
+    this.router.navigate(['/about-competition', index]);
   }
 }

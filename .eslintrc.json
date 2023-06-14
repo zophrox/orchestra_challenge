@@ -1,0 +1,104 @@
+{
+  "root": true,
+  "ignorePatterns": ["projects/**/*"],
+  "parser": "@typescript-eslint/parser",
+  "plugins": ["@typescript-eslint"],
+  "overrides": [
+    {
+      "files": ["*.ts"],
+      "extends": [
+        "eslint:recommended",
+        "plugin:@typescript-eslint/recommended",
+        "plugin:@angular-eslint/recommended",
+        "plugin:@angular-eslint/template/process-inline-templates"
+      ],
+      "rules": {
+        "@angular-eslint/directive-selector": [
+          "error",
+          {
+            "type": "attribute",
+            "prefix": "app",
+            "style": "camelCase"
+          }
+        ],
+        "@angular-eslint/component-selector": [
+          "error",
+          {
+            "type": "element",
+            "prefix": "app",
+            "style": "kebab-case"
+          }
+        ],
+        // simple rules
+        "no-debugger": "warn",
+        "linebreak-style": ["error", "windows"],
+        "semi": ["error", "always"],
+        "no-unused-variable": "off",
+        "no-empty-function": "off",
+        "max-classes-per-file": ["error", 1],
+        "max-len": ["warn", 140],
+        "no-multiple-empty-lines": "error",
+        "no-console": ["warn", { "allow": ["debug", "info", "time", "timeEnd", "trace", "error"] }],
+
+        "@typescript-eslint/no-inferrable-types": ["warn"],
+        "@typescript-eslint/no-explicit-any": "warn",
+        "@typescript-eslint/no-empty-function": "warn",
+        "@angular-eslint/no-empty-lifecycle-method": "off",
+
+        "@typescript-eslint/member-ordering": [
+          "warn",
+          {
+            "default": [
+              "public-decorated-field",
+              "protected-decorated-field",
+              "private-decorated-field",
+              "public-static-field",
+              "protected-static-field",
+              "private-static-field",
+              "public-instance-field",
+              "public-abstract-field",
+              "protected-instance-field",
+              "protected-abstract-field",
+              "private-instance-field",
+              "static-field",
+              "public-field",
+              "public-set",
+              "public-get",
+              "instance-field",
+              "protected-field",
+              "private-field",
+              "abstract-field",
+              "constructor",
+              "public-static-method",
+              "protected-static-method",
+              "private-static-method",
+              "public-method",
+              "protected-method",
+              "private-method"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "files": ["*.html"],
+      "extends": ["plugin:@angular-eslint/template/recommended"],
+      "rules": {
+        "@angular-eslint/template/attributes-order": [
+          "warn",
+          {
+            "alphabetical": false,
+            "order": [
+              "STRUCTURAL_DIRECTIVE", // e.g. `*ngIf="true"`, `*ngFor="let item of items"`
+              "TEMPLATE_REFERENCE", // e.g. `<input #inputRef>`
+              "ATTRIBUTE_BINDING", // e.g. `<input required>`, `id="3"`
+              "INPUT_BINDING", // e.g. `[id]="3"`, `[attr.colspan]="colspan"`, [style.width.%]="100", [@triggerName]="expression", `bind-id="handleChange()"`
+              "TWO_WAY_BINDING", // e.g. `[(id)]="id"`, `bindon-id="id"
+              "OUTPUT_BINDING" // e.g. `(idChange)="handleChange()"`, `on-id="handleChange()"`
+            ]
+          }
+        ]
+      }
+    }
+  ]
+}

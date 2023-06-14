@@ -1,32 +1,30 @@
-import { Component, HostListener } from '@angular/core';
+import { DOCUMENT } from '@angular/common';
+import { Component, ElementRef, HostListener, Inject, Renderer2, ViewChild } from '@angular/core';
 
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
-  styleUrls: ['./app.component.scss']
+  styleUrls: ['./app.component.scss'],
 })
 export class AppComponent {
-  title = 'orchestra_challenge';
+  @ViewChild('headerRef') headerRef!: ElementRef;
+
+  constructor(
+    private renderer: Renderer2,
+    @Inject(DOCUMENT) private document: Document,
+    @Inject('Window') private window: Window
+  ) {}
+
   @HostListener('window:scroll', [])
   onWindowScroll() {
     const scrollOffset =
-      window.pageYOffset ||
-      document.documentElement.scrollTop ||
-      document.body.scrollTop ||
-      0;
+      this.window.pageYOffset || this.document.documentElement.scrollTop || this.document.body.scrollTop || 0;
 
-    if (scrollOffset >= 120) {
-      document.querySelectorAll('.header').forEach((c) => {
-        c.classList.add('scroll-style');
-        c.classList.remove('transparent-header')
-
-      });
+    if (scrollOffset >= 20) {
+      this.renderer.addClass(this.headerRef.nativeElement, 'scroll-style');
+      this.renderer.removeClass(this.headerRef.nativeElement, 'transparent-header');
     } else {
-      document.querySelectorAll('.header').forEach((c) => {
-        c.classList.add('transparent-header')
-        c.classList.remove('scroll-style')
-        
-      });
+      this.renderer.addClass(this.headerRef.nativeElement, 'transparent-header');
     }
   }
 }

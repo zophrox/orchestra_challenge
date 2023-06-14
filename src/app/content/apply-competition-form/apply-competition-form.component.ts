@@ -8,7 +8,8 @@ import { Component } from '@angular/core';
 export class ApplyCompetitionFormComponent {
   onApply() {
     window.open(
-      'https://docs.google.com/forms/d/e/1FAIpQLSc7pzJD7AczFRUl5fW6val5Wbani8V5EYhpLJbLTJils88YSg/alreadyresponded'
-    ,"_blank");
+      'https://docs.google.com/forms/d/e/1FAIpQLSc7pzJD7AczFRUl5fW6val5Wbani8V5EYhpLJbLTJils88YSg/alreadyresponded',
+      '_blank'
+    );
   }
 }
