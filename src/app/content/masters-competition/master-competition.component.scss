@@ -1,4 +1,4 @@
-.team-container {
+.master-competition-container {
   padding-top: 5%;
   max-width: 100%;
   h1 {
@@ -7,7 +7,7 @@
     font-weight: 650;
     color: rgba(0, 0, 0);
   }
-  .team-card {
+  .master-competition-card {
     width: 100%;
     display: flex;
     justify-content: space-between;
@@ -15,7 +15,7 @@
     padding-top: 20px;
     padding-bottom: 20px;
   }
-  .team-card-reverse {
+  .master-competition-card-reverse {
     width: 100%;
     display: flex;
     justify-content: space-between;
@@ -37,8 +37,8 @@
     transition: box-shadow 0.5s ease-in-out;
   }
 
-  .content,
-  .content-reverse {
+  .master-competition-content,
+  .master-competition-content-reverse {
     display: flex;
     flex: 4;
     flex-direction: column;
@@ -46,7 +46,7 @@
     padding: 20px 40px;
   }
 
-  .name {
+  .master-competition-name {
     font-weight: 400;
     font-size: 100px;
     text-align: center;
@@ -55,7 +55,7 @@
     animation: animate 2s linear;
   }
 
-  .describe {
+  .master-competition-describe {
     font-weight: 200;
     font-size: 25px;
     text-align: center;

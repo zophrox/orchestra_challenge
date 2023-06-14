@@ -3,7 +3,7 @@ import { RouterModule, Routes } from '@angular/router';
 import { AboutCompetitionComponent } from './archive/about-competition/about-competition.component';
 import { CompetitionRegulationsComponent } from './competition-regulations/competition-regulations.component';
 import { HomeComponent } from './home/home.component';
-import { TeamComponent } from './team/team.component';
+import { MasterCompetitionComponent } from './masters-competition/master-competition.component';
 
 const appRoutes: Routes = [
   { path: '', component: HomeComponent },
@@ -13,7 +13,7 @@ const appRoutes: Routes = [
   },
   {
     path: 'team',
-    component: TeamComponent,
+    component: MasterCompetitionComponent,
   },
   { path: 'about-competition/:id', component: AboutCompetitionComponent },
 ];

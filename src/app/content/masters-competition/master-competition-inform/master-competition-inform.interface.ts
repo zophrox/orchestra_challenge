@@ -1,4 +1,4 @@
-export interface TeamInfo {
+export interface MasterCompetitionInfo {
   name: string;
   description: string;
   image: string;

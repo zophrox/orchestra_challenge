@@ -1,6 +1,6 @@
-import { TeamInfo } from './team-inform.interface';
+import { MasterCompetitionInfo } from './master-competition-inform.interface';
 
-export const teamInformList: TeamInfo[] = [
+export const MastersCompetitionInfoInformList: MasterCompetitionInfo[] = [
   {
     name: 'Кунтий Олег',
     description:

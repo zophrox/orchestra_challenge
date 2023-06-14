@@ -1,51 +1,51 @@
-* {
-  box-sizing: border-box;
-}
-html,
-body {
-  margin: 0;
-  padding: 0;
-}
-
-.card-wrapper {
+.laureats-card {
   border: 2px solid gray;
   padding: 0.75rem;
+
+  .laureat-card {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    border: 2px solid gray;
+
+    .laureat-image {
+
+      img {
+        width: 100%;
+        box-shadow: 0 5px 20px rgba(0, 0, 0, 0.3);
+        transition: box-shadow 0.3s ease-in-out;
+      }
+
+      img:hover {
+        box-shadow: 0 0 35px rgba(0, 0, 0, 1);
+        transition: box-shadow 0.5s ease-in-out;
+      }
+      flex: 2;
+    }
+    
+    .laureat-description {
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+      flex: 3;
+      padding-left: 10px;
+
+      .instrument {
+        font-size: 20px;
+      }
+
+      .laureat-info {
+        font-size: 20px;
+        line-height: 1.25;
+      }
+    }
+    
+  }
+  
+  
 }
 // <неймспейс><іменник>
 // custom-card
 
 // laureat-human-card
-.card-custom {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  border: 2px solid gray;
-}
 
-.card-image {
-  img {
-    width: 100%;
-    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.3);
-    transition: box-shadow 0.3s ease-in-out;
-  }
-  img:hover {
-    box-shadow: 0 0 35px rgba(0, 0, 0, 1);
-    transition: box-shadow 0.5s ease-in-out;
-  }
-  flex: 2;
-}
-
-.card-description {
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-  flex: 3;
-  padding-left: 10px;
-}
-.instrument {
-  font-size: 20px;
-}
-.card-text {
-  font-size: 20px;
-  line-height: 1.25;
-}
