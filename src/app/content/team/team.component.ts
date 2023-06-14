@@ -3,7 +3,6 @@ import { TeamService } from './team.service';
 import { TeamInfo } from './team-inform/team-inform.interface';
 // import { TeamInfo } from './team-inform/team-inform.mock';
 
-
 @Component({
   selector: 'app-team',
   templateUrl: './team.component.html',

@@ -14,7 +14,10 @@ import { ArchiveService } from '../archive.service';
 export class AboutCompetitionComponent implements OnInit {
   laureatsInfo!: LaureatInfo[];
 
-  constructor(private archiveService: ArchiveService, private route: ActivatedRoute) {}
+  constructor(
+    private archiveService: ArchiveService,
+    private route: ActivatedRoute
+  ) {}
 
   ngOnInit() {
     this.route.params.subscribe((params: Params) => {

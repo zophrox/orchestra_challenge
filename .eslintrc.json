@@ -2,10 +2,7 @@
   "root": true,
   "ignorePatterns": ["projects/**/*"],
   "parser": "@typescript-eslint/parser",
-  "plugins": [
-    "@typescript-eslint",
-    "prettier"
-  ],
+  "plugins": ["@typescript-eslint", "prettier"],
   "overrides": [
     {
       "files": ["*.ts"],
@@ -42,8 +39,11 @@
         "max-classes-per-file": ["error", 1],
         "max-len": ["warn", 140],
         "no-multiple-empty-lines": "error",
-        "no-console": ["warn", { "allow": ["debug", "info", "time", "timeEnd", "trace", "error"] }],
-        
+        "no-console": [
+          "warn",
+          { "allow": ["debug", "info", "time", "timeEnd", "trace", "error"] }
+        ],
+
         "@typescript-eslint/no-inferrable-types": ["warn"],
         "@typescript-eslint/no-explicit-any": "warn",
         "@typescript-eslint/no-empty-function": "warn",

@@ -6,6 +6,6 @@ import { teamInformList } from './team-inform/team-inform.mock';
 })
 export class TeamService {
   getInform() {
-    return teamInformList.slice(); // shallow copy / deep copy
+    return JSON.parse(JSON.stringify(teamInformList));
   }
 }
