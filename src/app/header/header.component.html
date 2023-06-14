@@ -4,24 +4,16 @@
 
     <!-- material library -->
 
-    <button class="menu-bar-item" cdkMenuItem [cdkMenuTriggerFor]="file">
-      Про проект
-    </button>
+    <button class="menu-bar-item" cdkMenuItem [cdkMenuTriggerFor]="file">Про проект</button>
 
     <ng-template #file>
       <div class="menu" cdkMenu>
-       
-
         <button class="menu-item" cdkMenuItem>New <span>&#10148;</span></button>
         <!-- <a href="#competition" class="menu-item" cdkMenuItem>Положення</a> -->
-        <a routerLink="/competition-regulations" class="menu-item" cdkMenuItem
-          >Положення</a
-        >
+        <a routerLink="/competition-regulations" class="menu-item" cdkMenuItem>Положення</a>
         <a href="#archive" class="menu-item">Архів</a>
 
-        <button class="menu-item" cdkMenuItem>
-          Розклад майстеркласів<span>&#10148;</span>
-        </button>
+        <button class="menu-item" cdkMenuItem>Розклад майстеркласів<span>&#10148;</span></button>
         <a href="#contact" class="menu-item" cdkMenuItem> Контакти </a>
         <a class="menu-item" routerLink="/team" cdkMenuItem>Команда</a>
       </div>
@@ -42,11 +34,7 @@
     <mat-icon>menu</mat-icon>
   </button> -->
 
-  <button
-    mat-icon-button
-    class="icon"
-    aria-label="Example icon-button with share icon"
-  >
+  <button mat-icon-button class="icon" aria-label="Example icon-button with share icon">
     <mat-icon>share</mat-icon>
   </button>
 </mat-toolbar>

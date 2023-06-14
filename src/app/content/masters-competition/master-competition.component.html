@@ -2,7 +2,7 @@
   <h1>Команда</h1>
   <div *ngFor="let coachInform of infoTeam; let i = index">
     <div [ngClass]="i % 2 === 0 ? 'master-competition-card' : 'master-competition-card-reverse'">
-      <img [src]="coachInform.image" alt="Oleh Kuntyy" />
+      <img alt="Oleh Kuntyy" [src]="coachInform.image" />
       <div [ngClass]="i % 2 === 0 ? 'master-competition-content' : 'master-competition-content-reverse'">
         <div class="master-competition-name">
           <p>{{ coachInform.name }}</p>

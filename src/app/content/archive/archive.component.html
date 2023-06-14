@@ -1,26 +1,16 @@
 <h1 class="t-a-c">Роботи попередніх конкурсів "Orchestra Challenge"</h1>
 
 <div class="video">
-  <mat-card
-    *ngFor="let item of listArchiveCompetition; let i = index"
-    class="card"
-  >
+  <mat-card *ngFor="let item of listArchiveCompetition; let i = index" class="card">
     <mat-card-header>
       <!-- <div mat-card-avatar class="header-image"></div> -->
       <mat-card-title>{{ item.titleName }}</mat-card-title>
       <!-- <mat-card-subtitle>Dog Breed</mat-card-subtitle> -->
     </mat-card-header>
-    <youtube-player [videoId]="item.video" [height]="200" [width]="300">
-    </youtube-player>
+    <youtube-player [videoId]="item.video" [height]="200" [width]="300"> </youtube-player>
 
     <mat-card-content>
-      <button
-        mat-fab
-        extended
-        color="warn"
-        style="text-align: center; padding-top: 10px"
-        (click)="competitionIndex(i)"
-      >
+      <button mat-fab extended color="warn" style="text-align: center; padding-top: 10px" (click)="competitionIndex(i)">
         Детальніше
       </button>
     </mat-card-content>

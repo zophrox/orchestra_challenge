@@ -45,7 +45,6 @@ build
 coverage
 
 # Ignore all HTML files:
-*.html
 **/.git
 **/.svn
 **/.hg

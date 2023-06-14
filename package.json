@@ -7,7 +7,8 @@
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
-    "lint": "ng lint",
+    "lint": "ng lint --fix",
+    "format": "npx prettier --write . && npm run lint",
     "prettier-format": "prettier --config .prettierrc 'src/**/*.ts' --write"
   },
   "private": true,

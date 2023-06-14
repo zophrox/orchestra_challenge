@@ -1,11 +1,12 @@
 <div class="laureats-card">
   <div class="laureat-card">
     <div class="laureat-image">
-      <img src="assets/{{ laureatInfo.image }}" alt="Card image cap" />
+      <img alt="Card image cap" src="assets/{{ laureatInfo.image }}" />
     </div>
     <div class="laureat-description">
-      <h1>{{ laureatInfo.name }}({{laureatInfo.instrument}})</h1>
+      <h1>{{ laureatInfo.name }}({{ laureatInfo.instrument }})</h1>
       <h3>{{ laureatInfo.place }}</h3>
+
       <!-- <h2 class="instrument">{{ laureatInfo.instrument }}</h2> -->
       <p class="laureat-info">{{ laureatInfo.description }}</p>
     </div>

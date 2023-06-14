@@ -2,7 +2,7 @@
   "root": true,
   "ignorePatterns": ["projects/**/*"],
   "parser": "@typescript-eslint/parser",
-  "plugins": ["@typescript-eslint", "prettier"],
+  "plugins": ["@typescript-eslint"],
   "overrides": [
     {
       "files": ["*.ts"],
@@ -10,9 +10,7 @@
         "eslint:recommended",
         "plugin:@typescript-eslint/recommended",
         "plugin:@angular-eslint/recommended",
-        "plugin:@angular-eslint/template/process-inline-templates",
-        "plugin:prettier/recommended",
-        "prettier"
+        "plugin:@angular-eslint/template/process-inline-templates"
       ],
       "rules": {
         "@angular-eslint/directive-selector": [
@@ -33,16 +31,14 @@
         ],
         // simple rules
         "no-debugger": "warn",
+        "linebreak-style": ["error", "windows"],
         "semi": ["error", "always"],
         "no-unused-variable": "off",
         "no-empty-function": "off",
         "max-classes-per-file": ["error", 1],
         "max-len": ["warn", 140],
         "no-multiple-empty-lines": "error",
-        "no-console": [
-          "warn",
-          { "allow": ["debug", "info", "time", "timeEnd", "trace", "error"] }
-        ],
+        "no-console": ["warn", { "allow": ["debug", "info", "time", "timeEnd", "trace", "error"] }],
 
         "@typescript-eslint/no-inferrable-types": ["warn"],
         "@typescript-eslint/no-explicit-any": "warn",
@@ -81,13 +77,6 @@
               "private-method"
             ]
           }
-        ],
-        "prettier/prettier": [
-          2,
-          "error",
-          {
-            "endOfLine": "auto"
-          }
         ]
       }
     },
@@ -95,7 +84,6 @@
       "files": ["*.html"],
       "extends": ["plugin:@angular-eslint/template/recommended"],
       "rules": {
-        "prettier/prettier": ["error", { "parser": "angular" }],
         "@angular-eslint/template/attributes-order": [
           "warn",
           {
