@@ -1,10 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute, Params } from '@angular/router';
-
-// import { CompetitionsInform } from 'src/app/shared/competitions-inform.model';
-import { LaureatInfo } from 'src/app/shared/laureatInfo.model';
-
 import { ArchiveService } from '../archive.service';
+import { LaureatInfo } from './competitions-inform/laureat-info.interface';
+
 
 @Component({
   selector: 'app-about-competition',

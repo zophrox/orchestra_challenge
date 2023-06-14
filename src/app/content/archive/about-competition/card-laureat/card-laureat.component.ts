@@ -1,5 +1,8 @@
 import { Component, Input } from '@angular/core';
-import { LaureatInfo } from 'src/app/shared/laureatInfo.model';
+import { LaureatInfo } from '../competitions-inform/laureat-info.interface';
+
+
+
 
 @Component({
   selector: 'app-card-laureat',
