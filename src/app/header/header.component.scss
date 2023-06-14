@@ -1,22 +1,19 @@
-.spacer {
-  flex: 1 1 auto;
-}
 .mat-toolbar {
   background-color: transparent;
-}
-a {
-  margin-right: 20px;
-  color: rgba(126, 116, 48, 255);
-  text-decoration: none;
-  &.active {
-    border-radius: 7%;
-    padding: 10px;
-  }
-  &:hover {
-    color: rgba(170, 130, 40, 300);
-  }
-}
 
+  a {
+    margin-right: 20px;
+    color: rgba(126, 116, 48, 255);
+    text-decoration: none;
+    &.active {
+      border-radius: 7%;
+      padding: 10px;
+    }
+    &:hover {
+      color: rgba(170, 130, 40, 300);
+    }
+  }
+}
 // Material library
 .menu-bar-item {
   margin-left: 10px;
@@ -98,4 +95,8 @@ a {
 .menu-bar-item[aria-expanded='true'],
 .menu-item[aria-expanded='true'] {
   color: rgba(170, 130, 40, 300) !important;
+}
+
+.spacer {
+  flex: 1 1 auto;
 }
